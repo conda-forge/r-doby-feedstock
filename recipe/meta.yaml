@@ -1,4 +1,4 @@
-{% set version = '4.5-15' %}
+{% set version = "4.6-2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/doBy_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/doBy/doBy_{{ version }}.tar.gz
-  sha256: bd694d547c162c7b518d870d4cb2f318fcbcc8d2cf01259287d8a2e30ea13558
+  sha256: ab9644ab891d5d26689228dbb4fccce397aeacab93aa1835358ffbe76cda6b0b
 
 build:
   number: 0
