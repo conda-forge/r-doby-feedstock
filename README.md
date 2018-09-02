@@ -7,7 +7,7 @@ Package license: GPL (>= 2)
 
 Feedstock license: BSD 3-Clause
 
-Summary: The facilities can roughly be grouped as:  . 1) Facilities for groupwise computations of summary statistics and other facilities for working with grouped data: 'do' something to data  stratified 'by' some variables.   . 2) LSmeans (least-squares means), general linear contrasts. . 3) Miscellaneous other utilities.
+Summary: Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts.  3) Miscellaneous other utilities.
 
 
 
