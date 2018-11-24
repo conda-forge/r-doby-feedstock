@@ -14,9 +14,8 @@ Summary: Contains: 1) Facilities for working with grouped data: 'do' something t
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-doby-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-doby-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-doby-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-doby-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-doby-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-doby-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-doby-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-doby-feedstock)
 
 Current release info
 ====================
