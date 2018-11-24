@@ -14,9 +14,9 @@ source:
   sha256: ab9644ab891d5d26689228dbb4fccce397aeacab93aa1835358ffbe76cda6b0b
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -51,8 +51,7 @@ about:
     ''by'' some variables. 2) LSmeans (least-squares means), general linear contrasts.  3)
     Miscellaneous other utilities.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
