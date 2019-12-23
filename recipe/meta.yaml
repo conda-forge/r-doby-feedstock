@@ -1,4 +1,4 @@
-{% set version = "4.6-3" %}
+{% set version = '4.6-3' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -7,36 +7,44 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: doBy_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/doBy_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/doBy/doBy_{{ version }}.tar.gz
   sha256: 6518cf6588df0d87803925152b928725b224d44e55024d6589e485a8f8350db4
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
   host:
     - r-base
+    - r-deriv
     - r-mass
     - r-matrix
+    - r-broom
     - r-dplyr
     - r-magrittr
+    - r-pbkrtest >=0.4_6
     - r-plyr
+    - r-tibble
   run:
     - r-base
+    - r-deriv
     - r-mass
     - r-matrix
+    - r-broom
     - r-dplyr
     - r-magrittr
+    - r-pbkrtest >=0.4_6
     - r-plyr
+    - r-tibble
 
 test:
   commands:
@@ -45,18 +53,35 @@ test:
 
 about:
   home: http://people.math.aau.dk/~sorenh/software/doBy/
-  license: GPL (>= 2)
+  license: GPL-2
   summary: 'Contains: 1) Facilities for working with grouped data: ''do'' something to data stratified
-    ''by'' some variables. 2) LSmeans (least-squares means), general linear contrasts.  3)
-    Miscellaneous other utilities.'
-  license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    ''by'' some variables. 2) LSmeans (least-squares means), general linear contrasts.
+    3) Miscellaneous other utilities.'
+  license_family: GPL2
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
+
+# Package: doBy
+# Version: 4.6-3
+# Title: Groupwise Statistics, LSmeans, Linear Contrasts, Utilities
+# Author: Sren Hjsgaard <sorenh@math.aau.dk> and Ulrich Halekoh <uhalekoh@health.sdu.dk>
+# Maintainer: Sren Hjsgaard <sorenh@math.aau.dk>
+# Description: Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts. 3) Miscellaneous other utilities.
+# Encoding: UTF-8
+# VignetteBuilder: knitr
+# URL: http://people.math.aau.dk/~sorenh/software/doBy/
+# ZipData: no
+# LazyData: true
+# License: GPL (>= 2)
+# Depends: R (>= 3.2.0), methods
+# Imports: pbkrtest (>= 0.4-6), MASS, Matrix, dplyr, plyr, magrittr, Deriv, tibble, broom
+# Suggests: multcomp, geepack, lme4, survival, ggplot2, tidyverse, knitr
+# RoxygenNote: 6.1.1
+# NeedsCompilation: no
+# Packaged: 2019-10-23 04:24:56 UTC; sorenh
+# Repository: CRAN
+# Date/Publication: 2019-10-23 05:50:03 UTC
