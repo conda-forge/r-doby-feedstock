@@ -1,4 +1,4 @@
-{% set version = "4.6.5" %}
+{% set version = "4.6.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/doBy_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/doBy/doBy_{{ version }}.tar.gz
-  sha256: e7811e982cb24095487d27a596c8aa128d32408af204b9d0a391ac000efc6ab2
+  sha256: 78e1341956c9ca67d79fc7ca171daa9b335b8ed10861416ac88594e074dde173
 
 build:
-  merge_build_host: True  # [win]
-  skip: True  # [r_base == "3.5.1"]
-  number: 1
+  merge_build_host: true  # [win]
+  skip: true  # [r_base == "3.5.1"]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -54,12 +54,10 @@ test:
 about:
   home: http://people.math.aau.dk/~sorenh/software/doBy/
   license: GPL-2
-  summary: 'Contains: 1) Facilities for working with grouped data: ''do'' something to data stratified
-    ''by'' some variables. 2) LSmeans (least-squares means), general linear contrasts.
-    3) Miscellaneous other utilities.'
+  summary: "Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts. 3) Miscellaneous other utilities."
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
