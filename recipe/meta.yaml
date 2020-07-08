@@ -14,8 +14,8 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  skip: true  # [r_base == "3.5.1"]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -30,9 +30,9 @@ requirements:
     - r-matrix
     - r-broom
     - r-dplyr
+    - r-ggplot2
     - r-magrittr
-    - r-pbkrtest >=0.4_6
-    - r-plyr
+    - r-pbkrtest >=0.4_8.1
     - r-tibble
   run:
     - r-base
@@ -41,9 +41,9 @@ requirements:
     - r-matrix
     - r-broom
     - r-dplyr
+    - r-ggplot2
     - r-magrittr
-    - r-pbkrtest >=0.4_6
-    - r-plyr
+    - r-pbkrtest >=0.4_8.1
     - r-tibble
 
 test:
@@ -53,7 +53,7 @@ test:
 
 about:
   home: http://people.math.aau.dk/~sorenh/software/doBy/
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: "Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts. 3) Miscellaneous other utilities."
   license_family: GPL2
   license_file:
