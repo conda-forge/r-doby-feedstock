@@ -3,9 +3,9 @@ About r-doby
 
 Home: http://people.math.aau.dk/~sorenh/software/doBy/
 
-Package license: GPL-2
+Package license: GPL-2.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts. 3) Miscellaneous other utilities.
 
@@ -15,71 +15,11 @@ Current build status
 ====================
 
 
-<table>
-    
-  <tr>
-    <td>Azure</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5178&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-doby-feedstock?branchName=master">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_r_base3.6target_platformlinux-64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5178&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-doby-feedstock?branchName=master&jobName=linux&configuration=linux_r_base3.6target_platformlinux-64" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_r_base4.0target_platformlinux-64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5178&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-doby-feedstock?branchName=master&jobName=linux&configuration=linux_r_base4.0target_platformlinux-64" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_r_base3.6target_platformosx-64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5178&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-doby-feedstock?branchName=master&jobName=osx&configuration=osx_r_base3.6target_platformosx-64" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_r_base4.0target_platformosx-64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5178&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-doby-feedstock?branchName=master&jobName=osx&configuration=osx_r_base4.0target_platformosx-64" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_r_base3.6target_platformwin-64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5178&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-doby-feedstock?branchName=master&jobName=win&configuration=win_r_base3.6target_platformwin-64" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_r_base4.0target_platformwin-64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5178&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-doby-feedstock?branchName=master&jobName=win&configuration=win_r_base4.0target_platformwin-64" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
-    </td>
-  </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5178&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-doby-feedstock?branchName=master">
+      </a>
     </td>
   </tr>
 </table>
