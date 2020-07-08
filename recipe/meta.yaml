@@ -1,4 +1,4 @@
-{% set version = "4.6.6" %}
+{% set version = "4.6.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/doBy_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/doBy/doBy_{{ version }}.tar.gz
-  sha256: 78e1341956c9ca67d79fc7ca171daa9b335b8ed10861416ac88594e074dde173
+  sha256: 530e6a718ec0bf30ab51bd573b6a7966c3a4a377c32cd7b1ff4e8b23940a6f9b
 
 build:
   merge_build_host: true  # [win]
