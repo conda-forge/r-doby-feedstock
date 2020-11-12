@@ -5,11 +5,9 @@ Home: http://people.math.aau.dk/~sorenh/software/doBy/
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-doby-feedstock/blob/master/LICENSE.txt)
 
 Summary: Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts. 3) Miscellaneous other utilities.
-
-
 
 Current build status
 ====================
