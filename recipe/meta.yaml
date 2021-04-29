@@ -29,9 +29,11 @@ requirements:
     - r-mass
     - r-matrix
     - r-broom
+    - r-curry
     - r-dplyr
     - r-ggplot2
     - r-magrittr
+    - r-microbenchmark
     - r-pbkrtest >=0.4_8.1
     - r-tibble
   run:
@@ -40,9 +42,11 @@ requirements:
     - r-mass
     - r-matrix
     - r-broom
+    - r-curry
     - r-dplyr
     - r-ggplot2
     - r-magrittr
+    - r-microbenchmark
     - r-pbkrtest >=0.4_8.1
     - r-tibble
 
