@@ -9,6 +9,8 @@ Package license: GPL-2.0-or-later
 
 Summary: Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts. 3) Miscellaneous other utilities.
 
+Development: https://github.com/hojsgaard/doBy
+
 Current build status
 ====================
 
