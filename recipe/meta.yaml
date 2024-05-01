@@ -25,30 +25,36 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-deriv
-    - r-mass
-    - r-matrix
+    - r-boot
     - r-broom
-    - r-curry
+    - r-cowplot
+    - r-deriv
     - r-dplyr
     - r-ggplot2
-    - r-magrittr
+    - r-mass
+    - r-matrix
     - r-microbenchmark
+    - r-modelr
     - r-pbkrtest >=0.4_8.1
+    - r-rlang
     - r-tibble
+    - r-tidyr
   run:
     - r-base
-    - r-deriv
-    - r-mass
-    - r-matrix
+    - r-boot
     - r-broom
-    - r-curry
+    - r-cowplot
+    - r-deriv
     - r-dplyr
     - r-ggplot2
-    - r-magrittr
+    - r-mass
+    - r-matrix
     - r-microbenchmark
+    - r-modelr
     - r-pbkrtest >=0.4_8.1
+    - r-rlang
     - r-tibble
+    - r-tidyr
 
 test:
   commands:
@@ -57,33 +63,14 @@ test:
 
 about:
   home: http://people.math.aau.dk/~sorenh/software/doBy/
+  dev_url: https://github.com/hojsgaard/doBy
   license: GPL-2.0-or-later
   summary: "Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts. 3) Miscellaneous other utilities."
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-
-# Package: doBy
-# Version: 4.6-3
-# Title: Groupwise Statistics, LSmeans, Linear Contrasts, Utilities
-# Author: Sren Hjsgaard <sorenh@math.aau.dk> and Ulrich Halekoh <uhalekoh@health.sdu.dk>
-# Maintainer: Sren Hjsgaard <sorenh@math.aau.dk>
-# Description: Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts. 3) Miscellaneous other utilities.
-# Encoding: UTF-8
-# VignetteBuilder: knitr
-# URL: http://people.math.aau.dk/~sorenh/software/doBy/
-# ZipData: no
-# LazyData: true
-# License: GPL (>= 2)
-# Depends: R (>= 3.2.0), methods
-# Imports: pbkrtest (>= 0.4-6), MASS, Matrix, dplyr, plyr, magrittr, Deriv, tibble, broom
-# Suggests: multcomp, geepack, lme4, survival, ggplot2, tidyverse, knitr
-# RoxygenNote: 6.1.1
-# NeedsCompilation: no
-# Packaged: 2019-10-23 04:24:56 UTC; sorenh
-# Repository: CRAN
-# Date/Publication: 2019-10-23 05:50:03 UTC
