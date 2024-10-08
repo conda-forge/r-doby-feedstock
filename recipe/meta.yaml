@@ -1,4 +1,4 @@
-{% set version = "4.6.22" %}
+{% set version = "4.6.24" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/doBy_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/doBy/doBy_{{ version }}.tar.gz
-  sha256: 2aa7e236de98af73de54a46214ceac50fdf69d90b12bb37f2779a501f40b0b0d
+  sha256: 94b6c80356914f26f34be0efb78592f70a5dbb22066bd75d9f2afe84846030ee
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
