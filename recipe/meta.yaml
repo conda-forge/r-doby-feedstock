@@ -1,4 +1,4 @@
-{% set version = "4.7.0" %}
+{% set version = "4.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,18 +9,23 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/doBy_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/doBy/doBy_{{ version }}.tar.gz
-  sha256: aa706dc5747ded642a6d70ec7b8369317d7cb7c4b50d885ec54e31ced9fa2788
+  sha256: a6d9b14e3b4f907addbe7461a39bab2c0efda6b78ee6b91372908cfaf87b827b
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-deriv
@@ -30,9 +35,11 @@ requirements:
     - r-broom
     - r-cowplot
     - r-dplyr
+    - r-forecast
     - r-ggplot2
     - r-microbenchmark
     - r-modelr
+    - r-purrr
     - r-rlang
     - r-tibble
     - r-tidyr
@@ -45,9 +52,11 @@ requirements:
     - r-broom
     - r-cowplot
     - r-dplyr
+    - r-forecast
     - r-ggplot2
     - r-microbenchmark
     - r-modelr
+    - r-purrr
     - r-rlang
     - r-tibble
     - r-tidyr
@@ -58,10 +67,14 @@ test:
     - "\"%R%\" -e \"library('doBy')\""  # [win]
 
 about:
-  home: http://people.math.aau.dk/~sorenh/software/doBy/
+  home: https://github.com/hojsgaard/doBy
   dev_url: https://github.com/hojsgaard/doBy
   license: GPL-2.0-or-later
-  summary: "Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts. 3) Miscellaneous other utilities."
+  summary: 'Utility package containing: Main categories: Working with grouped data: ''do'' something
+    to data when  stratified ''by'' some variables.  General linear estimates. Data
+    handling utilities. Functional programming, in particular restrict functions to
+    a smaller domain. Miscellaneous functions for data handling. Model stability in
+    connection with model selection. Miscellaneous other tools.'
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
