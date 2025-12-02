@@ -3,11 +3,11 @@ About r-doby-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-doby-feedstock/blob/main/LICENSE.txt)
 
-Home: http://people.math.aau.dk/~sorenh/software/doBy/
+Home: https://github.com/hojsgaard/doBy
 
 Package license: GPL-2.0-or-later
 
-Summary: Contains: 1) Facilities for working with grouped data: 'do' something to data stratified 'by' some variables. 2) LSmeans (least-squares means), general linear contrasts. 3) Miscellaneous other utilities.
+Summary: Utility package containing: Main categories: Working with grouped data: 'do' something to data when  stratified 'by' some variables.  General linear estimates. Data handling utilities. Functional programming, in particular restrict functions to a smaller domain. Miscellaneous functions for data handling. Model stability in connection with model selection. Miscellaneous other tools.
 
 Development: https://github.com/hojsgaard/doBy
 
